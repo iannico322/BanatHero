@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+:root{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    --bg-color: #23252C;
+    --primary-color:#1b2028;
+    --highlight-color:#e47500;
+    --text-color:#DCDCDC;
+}
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+}
+.container{
+    display: flex;
+
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+h4{
+    font-family: 'Bungee Spice', cursive;
+    font-weight: 500;
+    font-size: 4em;
+    letter-spacing: 2px;
+    color: rgb(218, 218, 218);
+}
+.box{
+    background-color: var(--primary-color);
+    height: 30rem;
+    min-width: 22rem;
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  background-color: #e47500;
+}
+h1{
+    color: var(--text-color);
+    margin: 1rem;
+}
+
+
+.custom-btn {
+ 
+    padding: 1rem 2rem;
+    border: 2px solid var(--highlight-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+
+.btn-11 {
+    overflow: hidden;
+    color: var;
+    transition: all 0.3s ease;
+    color: var(--highlight-color);
+  }
+
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: rgb(230, 228, 228);
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+  .btn-11:hover{
+    filter: hue-rotate(40deg);
+    transition: 200ms ease-in-out;
+  }
+  
+  .btn-11:active{
+    transform: translateY(2px);
+    transition: 200ms ease-in-out;
+  }
+
+@keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+} 
