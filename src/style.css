@@ -42,10 +42,49 @@ h4{
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   height: 20rem;
   width: 20rem;
   margin-bottom: 1rem;
   background-color: #e47500;
+}
+.text div{
+  position: fixed;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+.tooltiptext{
+  background-color: rgba(0, 0, 0, 0.483);
+  padding: 1rem;
+  font-size: .7em;
+  color: var(--text-color);
+  border-radius: .7em;
+  margin-bottom: .21rem;
+  visibility: hidden;
+}
+.fa-regular{
+  font-size: 1.4rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+.fa-regular:active{
+  transform: translateY(2px);
+}
+.fa:hover{
+  color: rgb(193, 192, 192);
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
 }
 h1{
     color: var(--text-color);
