@@ -29,6 +29,8 @@ let banats = [
 "are u a secret? cuz i don't think i can share u",
 "Para na akong london bridge dahil sayo. I'm falling down",
 "Kung si rizal tinamaan sa likod,ako naman tinamaan sayo",
+"baliktarin mo ung tapat oh diba walang nagbago ikaw parin mahal ko",
+"Gwapo ko"
 ]
 let banat_for_IT = [
 "A life without you, would be like a computer without an OS.",
