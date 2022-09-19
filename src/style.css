@@ -141,8 +141,8 @@ h1{
 }
 
   .btn-11:hover{
-    filter: hue-rotate(60deg);
-    transition: 200ms ease-in-out;
+    filter:grayscale(20);
+    transition: 100ms ease-in-out;
   }
   
   .btn-11:active{

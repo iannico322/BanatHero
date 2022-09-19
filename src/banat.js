@@ -91,7 +91,7 @@ function generateUniqueRandom(maxNr) {
 const logo = document.querySelector(".logo")
 const easter = document.querySelector(".hehe")
 
-easter.textContent = "Congrats! You unlock The techy banats zone";
+easter.textContent = "Congrats! You've unlock The techy banats zone";
 
 const text = document.querySelector('.text-change')
 const text_container = document.querySelector(".text")
