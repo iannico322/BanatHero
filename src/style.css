@@ -173,7 +173,7 @@ h1{
     max-width: 40rem;
     transition: 500ms ease-in-out;
   }
-  .text{
+  .text , #screen{
     width: 20rem;
     overflow: hidden;
     transition: 500ms ease-in-out;

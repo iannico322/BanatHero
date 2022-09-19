@@ -105,7 +105,6 @@ function generateUniqueRandom(maxNr) {
 
 
 
-
 const logo = document.querySelector(".logo")
 const easter = document.querySelector(".hehe")
 const mouse_sound = document.querySelector(".click")
@@ -128,15 +127,15 @@ function smallScreen(x) {
         easter.style.transform= "translateY(2rem)"
     } else {
         easter.style.transform= "translateY(12rem)"
+        
     }
   }
   
   var x = window.matchMedia("(max-width: 700px)")
 
   
-
-
 logo.addEventListener('click',()=>{
+   
     mouse_sound2.play();
     easter.style.visibility = "visible"
     banat_choice = banat_for_IT

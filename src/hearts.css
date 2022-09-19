@@ -1,0 +1,24 @@
+@-webkit-keyframes resize {
+  0% {
+    font-size: 0px;
+    color: black;
+  }
+  100% {
+    font-size: 100px;
+    color: red;
+  }
+}
+
+span.heart {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+
+  color: red;
+  -webkit-animation-name: resize;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+}
