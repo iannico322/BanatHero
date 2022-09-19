@@ -20,8 +20,10 @@ body{
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    
 }
 h4{
+  transition: 500ms ease-in-out;
     font-family: 'Bungee Spice', cursive;
     font-weight: 500;
     font-size: 4em;
@@ -50,6 +52,7 @@ h4{
     align-items: center;
     border-radius: 10px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: 500ms ease-in-out;
     
 }
 .text{
@@ -62,6 +65,7 @@ h4{
   margin-bottom: 1rem;
   background-color: #e47500;
   border-radius: 15px;
+  transition: 500ms ease-in-out;
 }
 .text div{
   

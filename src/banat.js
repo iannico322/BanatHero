@@ -6,7 +6,6 @@ let banats = [
 "Para tayong kwento ni Juan Tamad. Ako si Juan Tamad at ikaw yung bayabas...Hinihintay lang kitang mahulog sa akin.",
 " Sana exam mo nalang din ako... para sagutin mo din ako.",
 "Ang galing mo din ano? Di mo pa nga ako binabato, tinamaan na ko sayo.",
-"Miss para kang rebond...nagawa mo akong straight.",
 "Sana ako lang si antok...para gabi gabi pwede kitang dalawin",
 "Dalawa lang ang pwedeng mangyari. Either magmurahan tayo or magmahalan tayo",
 "Tindera ka ba ng yosi? kasi you give me HOPE..and MORE",
