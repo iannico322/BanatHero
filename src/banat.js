@@ -90,7 +90,8 @@ function generateUniqueRandom(maxNr) {
 
 const logo = document.querySelector(".logo")
 const easter = document.querySelector(".hehe")
-
+const mouse_sound = document.querySelector(".click")
+const mouse_sound2 = document.querySelector(".click2")
 easter.textContent = "Congrats! You've unlock The techy banats zone";
 
 const text = document.querySelector('.text-change')
@@ -118,12 +119,14 @@ function smallScreen(x) {
 
 
 logo.addEventListener('click',()=>{
+    mouse_sound2.play();
     easter.style.visibility = "visible"
     banat_choice = banat_for_IT
     text_container.style.backgroundColor = "#00546a"
     smallScreen(x)
 })
 logo.addEventListener('dblclick',()=>{
+    mouse_sound2.pause()
     easter.style.visibility = "hidden"
     banat_choice = banats
     text_container.style.backgroundColor = "#e47500"
@@ -148,6 +151,7 @@ copy_icon.addEventListener('click',()=>{
 
 
 btn.addEventListener('click',()=>{
+    mouse_sound.play()
     let x = generateUniqueRandom((banat_choice.length)-1)
     if(x==false){
         console.log(x)
