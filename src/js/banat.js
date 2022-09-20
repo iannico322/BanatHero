@@ -102,7 +102,7 @@ const easter = document.querySelector(".hehe");
 const hearts = document.querySelector(".bubbling-heart");
 const mouse_sound = document.querySelector(".click");
 const mouse_sound2 = document.querySelector(".click2");
-easter.textContent = "Congrats! You've unlock The techy banats zone";
+easter.textContent = "Congrats! You've unlocked The techy banats zone";
 
 const text = document.querySelector(".text-change");
 const text_container = document.querySelector(".text");
