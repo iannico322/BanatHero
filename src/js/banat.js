@@ -60,7 +60,7 @@ let banat_for_IT = [
   "If I was an operating system, your process would have top priority.",
   "If I were a method, you must be my parameter, because I will always need you.",
   "Is your name Google? Because you have everything I've been searching for.",
-  "Isn't your e-mail\n address\n beautifulgirl@mydreams.com?",
+  "Isn't your e-mail\n\n address\n beautifulgirl@mydreams.com?",
   "Let me be the 'throws Exception' to your 'public static void main (String[] args)'. I will accept whatever you give me.",
   "My love for you is a constant variable: unupdatable and unchangeable.",
   "My love is a for loop without the increment operator— infinitive, non-terminating, and difficult to stop once it starts running",
@@ -132,6 +132,17 @@ logo.addEventListener("click", () => {
   text_container.style.backgroundColor = "#00546a";
   smallScreen(x);
 });
+mouse_sound2.addEventListener('ended',()=>{
+  hearts.style.visibility = "hidden";
+  easter.style.visibility = "hidden";
+  banat_choice = banats;
+  text_container.style.backgroundColor = "#e47500";
+  smallScreen(x);
+  console.log("Love U CJ");
+
+})
+
+
 logo.addEventListener("dblclick", () => {
   mouse_sound2.pause();
   hearts.style.visibility = "hidden";
@@ -139,7 +150,7 @@ logo.addEventListener("dblclick", () => {
   banat_choice = banats;
   text_container.style.backgroundColor = "#e47500";
   smallScreen(x);
-  console.log("eror");
+  console.log("Pause");
 });
 
 copy_icon.addEventListener("click", () => {
@@ -167,3 +178,6 @@ btn.addEventListener("click", () => {
     text.textContent = bb;
   }
 });
+
+//Created by Ian Nico - 
+//Final version date : 09 - 20 -2022
