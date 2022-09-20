@@ -166,6 +166,9 @@ h1{
     font-size: 2em;
     transition: 500ms ease-in-out;
   }
+  .bubbling-heart div {
+    top: 70%;
+  }
   .box{
 
     height: 30rem;

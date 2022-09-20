@@ -107,6 +107,7 @@ function generateUniqueRandom(maxNr) {
 
 const logo = document.querySelector(".logo")
 const easter = document.querySelector(".hehe")
+const hearts = document.querySelector(".bubbling-heart")
 const mouse_sound = document.querySelector(".click")
 const mouse_sound2 = document.querySelector(".click2")
 easter.textContent = "Congrats! You've unlock The techy banats zone";
@@ -135,7 +136,7 @@ function smallScreen(x) {
 
   
 logo.addEventListener('click',()=>{
-   
+    hearts.style.visibility = "visible"
     mouse_sound2.play();
     easter.style.visibility = "visible"
     banat_choice = banat_for_IT
@@ -144,6 +145,7 @@ logo.addEventListener('click',()=>{
 })
 logo.addEventListener('dblclick',()=>{
     mouse_sound2.pause()
+    hearts.style.visibility = "hidden"
     easter.style.visibility = "hidden"
     banat_choice = banats
     text_container.style.backgroundColor = "#e47500"
