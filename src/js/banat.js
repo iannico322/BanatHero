@@ -68,6 +68,9 @@ logo.addEventListener("click", () => {
   
  
   bisVid.style.display = "flex"
+  logo.style.fontFamily = "Arial, Helvetica, sans-serif"
+  logo.style.color = "#dadada60"
+  logo.style.textShandow = "#9e9e9e96"
   
   console.log("works")
   banat_choice = banats.banats.bisaya;
@@ -76,12 +79,14 @@ logo.addEventListener("click", () => {
   text_container.style.backgroundColor = "#dadada00"
   box.style.backgroundColor = "#dadada00"
   text.style.color = "white"
+
   
     
   }else{
     hearts.style.visibility = "visible";
   bisVid.style.display = "none"
   bisVid.pause()
+  logo.style.color = "#e47500"
   console.log("works")
     hearts.style.visibility = "hidden";
     easter.style.visibility = "hidden";
@@ -90,6 +95,10 @@ logo.addEventListener("click", () => {
    
   box.style.backgroundColor = "#1b2028"
   text.style.color = "white"
+
+  logo.style.fontFamily = "'Bungee Spice', cursive";
+  logo.style.color = "rgb(218, 218, 218)"
+  logo.style.textShandow = "#23252c 2px 1px 2px"
 
 
 
