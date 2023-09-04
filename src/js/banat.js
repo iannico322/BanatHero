@@ -60,6 +60,7 @@ let isActive = true
 
 
 logo.addEventListener("click", () => {
+  bisVid.currentTime = 0;
   
   if (isActive == true) {
     console.log("run")
@@ -75,6 +76,7 @@ logo.addEventListener("click", () => {
   text_container.style.backgroundColor = "#dadada00"
   box.style.backgroundColor = "#dadada00"
   text.style.color = "white"
+  
     
   }else{
     hearts.style.visibility = "visible";
@@ -127,6 +129,7 @@ copy_icon.addEventListener("click", () => {
 });
 //dinako kasabot
 btn.addEventListener("click", () => {
+ 
   mouse_sound.play();
   let x = generateUniqueRandom(banat_choice.length - 1);
   if (x == false) {
