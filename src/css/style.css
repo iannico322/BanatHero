@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 :root{
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -15,6 +18,20 @@ body{
     margin: 0;
     background-color: var(--text-color);
 }
+.logo{
+  margin-bottom: 0px;
+}
+.options{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.options p {
+  margin: 0;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 2px 5px;
+}
 .container{
     display: flex;
 
@@ -26,12 +43,15 @@ body{
     
 }
 .video-bg{
+  display: none;
   margin: 0;
   position: absolute;
   z-index: -1;
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #1b2028;
+
 
 }
 .video-bg video{
@@ -42,8 +62,11 @@ body{
   z-index: -1;
   height: 100%;
   width: 100%;
+  opacity: 80%;
   object-fit:cover;
-  
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+
   
 }
 h4{
@@ -67,7 +90,8 @@ h4{
 
 .box{
     background-color: var(--primary-color);
-    height: 30rem;
+    min-height: 30rem;
+    max-height: 720px;
     min-width: 36rem;
     max-width: 40rem;
     display: flex;
@@ -75,6 +99,9 @@ h4{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
  
     transition: 500ms ease-in-out;
     
@@ -85,12 +112,14 @@ h4{
   align-items: center;
   text-align: center;
  
-  height: 20rem;
+  height: 100%;
+
   width: 29rem;
   margin-bottom: 1rem;
   background-color: #e47500;
   border-radius: 15px;
   transition: 500ms ease-in-out;
+
 }
 .text div{
   
@@ -102,7 +131,9 @@ h4{
   flex-direction: column;
   margin-left: auto;
   margin-bottom: 1rem;
+
 }
+
 
 .tooltiptext{
   background-color: rgba(0, 0, 0, 0.483);
@@ -196,9 +227,22 @@ h1{
   }
   .box{
 
-    height: 30rem;
+   
     min-width: 22rem;
     max-width: 40rem;
+
+    min-height: 30rem;
+    max-height: 80vh;
+    min-width: 22rem;
+    max-width: 40rem;
+    
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+
+
+
     transition: 500ms ease-in-out;
   }
   .text , #screen{

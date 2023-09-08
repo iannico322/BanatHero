@@ -53,26 +53,33 @@ function smallScreen(x) {
 var x = window.matchMedia("(max-width: 700px)");
 
 const bisVid = document.querySelector('.bis-vid')
+const vidBG = document.querySelector('.video-bg')
 
 let isActive = true
 
+const options = document.querySelector('.options')
+
+
+const bisaya = document.querySelector('#bisaya')
+const tagalog = document.querySelector('#tagalog')
+const it = document.querySelector('#it')
 
 
 
-logo.addEventListener("click", () => {
+bisaya.addEventListener("click", () => {
   bisVid.currentTime = 0;
   
-  if (isActive == true) {
-    console.log("run")
-    bisVid.play()
+  mouse_sound2.pause();
+  bisVid.play()
   
- 
+  options.style.color = "#e4e4e460"
   bisVid.style.display = "flex"
+  vidBG.style.display = "flex"
   logo.style.fontFamily = "Arial, Helvetica, sans-serif"
   logo.style.color = "#dadada60"
   logo.style.textShandow = "#9e9e9e96"
   
-  console.log("works")
+  
   banat_choice = banats.banats.bisaya;
   text_container.style.backgroundColor = "#00546a";
   smallScreen(x)
@@ -80,14 +87,24 @@ logo.addEventListener("click", () => {
   box.style.backgroundColor = "#dadada00"
   text.style.color = "white"
 
+
+   hearts.style.visibility = "hidden";
+  easter.style.visibility = "hidden";
   
-    
-  }else{
-    hearts.style.visibility = "visible";
-  bisVid.style.display = "none"
+
+});
+
+
+it.addEventListener('click',()=>{
   bisVid.pause()
+  mouse_sound2.play();
+
+  options.style.color = "#23252C"
+  hearts.style.visibility = "visible";
+  bisVid.style.display = "none"
+  vidBG.style.display = "none"
+  
   logo.style.color = "#e47500"
-  console.log("works")
     hearts.style.visibility = "hidden";
     easter.style.visibility = "hidden";
     banat_choice = banats.banats.normal;
@@ -102,40 +119,59 @@ logo.addEventListener("click", () => {
 
 
 
-    
-    smallScreen(x);
-    console.log("Pause");
-  }
 
+  hearts.style.visibility = "visible"
+ 
+  banat_choice = banats.banats.techy;
+  text_container.style.backgroundColor = "#00546a"
+  smallScreen(x)
   
-  
-  isActive = !isActive
-
-  console.log(isActive)
-});
-mouse_sound2.addEventListener('ended',()=>{
-  hearts.style.visibility = "hidden";
-  easter.style.visibility = "hidden";
-  banat_choice = banats;
-  text_container.style.backgroundColor = "#e47500";
-  smallScreen(x);
-  console.log("Love U CJ");
-
 })
+
+tagalog.addEventListener('click',()=>{
+  mouse_sound2.pause();
+  options.style.color = "#23252C"
+  hearts.style.visibility = "visible";
+  bisVid.style.display = "none"
+  vidBG.style.display = "none"
+  bisVid.pause()
+  logo.style.color = "#e47500"
+  console.log("works")
+    hearts.style.visibility = "hidden";
+    easter.style.visibility = "hidden";
+    banat_choice = banats.banats.normal;
+    text_container.style.backgroundColor = "#e47500";
+   
+  box.style.backgroundColor = "#1b2028"
+  text.style.color = "white"
+
+  logo.style.fontFamily = "'Bungee Spice', cursive";
+  logo.style.color = "rgb(218, 218, 218)"
+  logo.style.textShandow = "#23252c 2px 1px 2px"
+  smallScreen(x);
+})
+
+
+
+
+
+
+
 
 
 
 copy_icon.addEventListener("click", () => {
   tip.style.visibility = "visible";
-});
-
-copy_icon.addEventListener("mouseout", () => {
-  tip.style.visibility = "hidden";
-});
-
-copy_icon.addEventListener("click", () => {
   navigator.clipboard.writeText(bb);
+  setTimeout(()=>{
+    tip.style.visibility = "hidden";
+  },[1000])
 });
+
+
+// copy_icon.addEventListener("click", () => {
+//   navigator.clipboard.writeText(bb);
+// });
 //dinako kasabot
 btn.addEventListener("click", () => {
  
