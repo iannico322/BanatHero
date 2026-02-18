@@ -1,4 +1,4 @@
-import banats from './banat.json' assert {type: 'json'};
+import banats from './banat.json';
 
 
 let haveIt = [];
