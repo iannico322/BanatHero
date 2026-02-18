@@ -97,7 +97,7 @@ const banats = {
     ]
         
     }
-};
+}
 
 
 let haveIt = [];
