@@ -1,6 +1,5 @@
 let haveIt = [];
-let banats = {
-    "banats":{
+let banats = ["banats":{
         "normal":[
             "Kung akoa ka, yahay kayka",
             "kung ang english ng asol ay blue, bakit palaging ikaw naiisip ko",
@@ -97,8 +96,7 @@ let banats = {
     
     ]
         
-    }
-};
+    }];
 let banat_choice = [];
 
 // Load JSON data first, then initialize the app
